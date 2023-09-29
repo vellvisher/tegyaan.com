@@ -1,0 +1,117 @@
+body {
+    padding:0 10px;
+    font:18px/1.5 -apple-system,
+         BlinkMacSystemFont,
+         "Segoe UI",
+         Roboto,
+         "Helvetica Neue",
+         Arial,
+         "Noto Sans",
+         sans-serif,
+         "Apple Color Emoji",
+         "Segoe UI Emoji",
+         "Segoe UI Symbol",
+         "Noto Color Emoji";
+    color:#444;
+    margin: auto;
+}
+
+html, body {
+    height: 100%;
+    margin: auto;
+    max-width: 88ch;
+}
+
+h1,h2,h3 {
+    line-height:1.2
+}
+
+.header-div {
+    height: 100%;
+    min-height: 100%;
+    text-align:center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.promo-video-container {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.promo-video {
+    max-width: 100%;
+}
+
+/* Running on touch device? */
+/* @media (hover: none) { */
+/*     .promo-video-container { */
+/*         height:86vh; */
+/*     } */
+/* } */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* Just a parent container for the videos */
+.videos {
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* Play overlay */
+
+.video-wrap {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.video-wrap .placeholder {
+    max-width: 700px;
+    width: 100%;
+}
+
+/* SVG play button container */
+.video-wrap .play-btn {
+    position: absolute;
+    max-width: 700px;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Let video tag handle click events */
+    pointer-events: none;
+}
+
+.video-wrap .play-btn svg {
+    transition: all .2s ease;
+    fill: #aaaaaa;
+    /* Let video tag handle click events */
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .video-wrap .play-btn {
+        width: 60px;
+        height: 60px;
+    }
+}
