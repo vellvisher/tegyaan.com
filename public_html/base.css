@@ -41,6 +41,9 @@ p {
     vertical-align: -0.125em;
   }
 
+.svg-icon {
+    fill: #ffffff;
+}
 
 .contact-button {
     border-color: #ffffff;
