@@ -32,6 +32,16 @@ div {
     align-items: center;
 }
 
+.animated_product {
+    width: 200%;
+}
+
+@media screen and (max-width: 600px) {
+    .animated_product {
+        width: 150%;
+    }
+}
+
 .header-div {
     height: 100%;
     min-height: 100%;
